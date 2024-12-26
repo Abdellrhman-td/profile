@@ -1,26 +1,26 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'horizontal',
     loop: true,
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    speed: 1500,
+    speed: 6500,
     allowTouchMove: true,
-
-    slidesPerView: 1,
-    spaceBetween: 10,
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+    freeMode: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
     autoplay: {
-        delay: 2000,
+        delay: 0,
     },
+});
+// Handle scroll events to the navbar
+let navbar = document.querySelector("nav");
+let lastScrollY = 0;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        navbar.classList.add("hidden");
+    } else {
+        // Scrolling up
+        navbar.classList.remove("hidden");
+    }
+    lastScrollY = window.scrollY; // Update last scroll position
 });

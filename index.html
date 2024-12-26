@@ -18,86 +18,93 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-    <div class="landing-page" >
-        <!-- <div class="spot-light-left">
-        </div>
-        <div class="spot-light-right">
-        </div> -->
-        <nav>
-            <div class="paragraph-container container">
-                <li><a href="#about"></a>About</li>
-                <li><a href="#projects"></a>Projects</li>
-                <li><a href="#testimonial"></a>Testimonial</li>
-                <li><a href="#contact"></a>Contact</li>
+    <header id="about">
+        <div class="container">
+            <img class="spot-light-left" src="/images/spotlight (1).svg" alt="">
+            <img class="spot-light-right" src="/images/spotlight.svg" alt="">
+            <nav>
+                <li><a class="active" href="#about">About</a><div class="circle"></div></li>
+                <li><a href="#projects">Projects</a><div class="circle"></div></li>
+                <li><a href="#testimonials">Testimonials</a><div class="circle"></div></li>
+                <li><a href="#contact">Contact</a><div class="circle"></div></li>
+            </nav>
+            <div class="content">
+                <p class="crafting">Dynamic Web Magic with Next.js</p>
+                <h2 class="section">Transforming Concepts into <br> Seamless <span>User Experiences</span></h2>
+                <p class="welcome-message">Hi! I’m Adrian, a Next.js Developer based in Croatia.</p>
+                <div class="button"><a href="">see my work <img src="/images/Arrow.svg" alt=""></a></div>
             </div>
-        </nav>
-        <div class="content container">
-            <p class="crafting">Dynamic Web Magic with Next.js</p>
-            <p class="section">Transforming Concepts into <br> Seamless <span>User Experiences</span></p>
-            <p class="welcome-message">Hi! I’m Adrian, a Next.js Developer based in Croatia.</p>
-            <div class="button">see my work <img src="/images/Arrow.png" alt=""></div>
         </div>
-        <div class="portfolio">
-            <div class="grid-one container">
+    </header>
+    <section class="portfolio" id="">
+        <div class="container">
+            <div class="row g-5">
                 <div class="h-box">
-                    <div class="box">
-                        <div class="button-box">
-                            <img src="/images/Button (2).png" alt="">
-                        </div>
-                        <div class="group">
-                            <img src="/images/Group.png" alt="">
-                        </div>
-                        <p class="text">I prioritize client collaboration, fostering open communication </p>
-                        <div class="fade"></div>
-                    </div>
-                    <div class="frame">
-                        <div class="box-map">
-                            <p class="zone">I’m very flexible with time zone communications</p>
-                            <div class="pagination-buttons">
-                                <div class="button-map-Ukrain"><p class="country">Ukrain</p></div>
-                                <div class="button-map-Germany"><p class="country">Germany</p></div>
-                                <div class="button-map-USA"><p class="country">USA</p></div>
+                    <div class="row g-5">
+                        <div class="box col-lg-7">
+                            <div class="button-box">
+                                <img src="/images/Button (2).png" alt="">
                             </div>
-                        </div>
-                        <div class="box-lang">
-                            <div class="image-box">
-                                <img src="/images/Frame (1).png" alt="">
-                                <img src="/images/Frame.png" alt="">
+                            <div class="group">
+                                <img src="/images/Group.png" alt="">
                             </div>
-                            <div class="content">
-                                <p class="improve">I constantly try to improve</p>
-                                <p class="stack">My tech stack</p>
+                            <p class="text">I prioritize client collaboration, fostering open communication </p>
+                            <img class="fade-img" src="images/fade.png" alt="">
+                        </div>
+                        <div class="frame col-lg-5">
+                            <div class="box-map">
+                                <p class="zone">I’m very flexible with time zone communications</p>
+                                <div class="pagination-buttons">
+                                    <div class="button-map-Ukrain"><p class="country">Ukrain</p></div>
+                                    <div class="button-map-Germany"><p class="country">Germany</p></div>
+                                    <div class="button-map-USA"><p class="country">USA</p></div>
+                                </div>
+                                <img src="/images/map.png" alt="">
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-box">
-                    <div class="v-box">
-                        <div class="box1">
-                            <p>Tech enthusiast with a passion for development.</p>
-                            <img src="/images/section input.png" alt="">
-                        </div>
-                        <div class="box2">
-                            <div class="button-container">
-                                <p>Do you want to start a project together?</p>
-                                <div class="button">
-                                    <img src="/images/Card.svg" alt="">
-                                    <p>Copy my email address</p>
+                            <div class="box-lang">
+                                <div class="image-box">
+                                    <img src="/images/Frame (1).png" alt="">
+                                    <img src="/images/Frame.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p class="improve">I constantly try to improve</p>
+                                    <p class="stack">My tech stack</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="box-animation">
-                        <div class="frame">
-                            <p class="paragraph1">The Inside Scoop</p>
-                            <p class="paragraph2">Currently building a JS Animation library</p>
+                </div>
+                <div class="h-box2">
+                    <div class="row g-5">
+                        <div class="v-box col-lg-4">
+                            <div class="box1">
+                                <p>Tech enthusiast with a passion for development.</p>
+                                <img src="/images/section-input.svg" alt="">
+                            </div>
+                            <div class="box2">
+                                <div class="button-container">
+                                    <p>Do you want to start a project together?</p>
+                                    <div class="button">
+                                        <img src="/images/Card.svg" alt="">
+                                        <p>Copy my email address</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <img src="/images/Image (1).png" alt="">
+                        <div class="box-animation col-lg-8">
+                            <div class="frame">
+                                <p class="paragraph1">The Inside Scoop</p>
+                                <p class="paragraph2">Currently building a JS Animation library</p>
+                            </div>
+                            <img src="/images/Image (1).png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="projects" id="projects">
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
             <p class="title">A small selection of <span>recent projects</span></p>
             <div class="cards-container">
                 <div class="project-card">
@@ -130,8 +137,8 @@
                                     <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
                                     <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
                                     <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="img14" src="/images/image 14.png" alt=""><div class="circle"></div></li>
+                                    <li><img class="threejs" src="/images/Frame.svg" alt=""><div class="circle"></div></li>
+                                    <li><img class="img14" src="/images/Frame (1).svg" alt=""><div class="circle"></div></li>
                             </div>
                             <div class="frame6">
                                 <p>Check Live Site</p>
@@ -154,7 +161,7 @@
                                     <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
                                     <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
                                     <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="img14" src="/images/image 14.png" alt=""><div class="circle"></div></li>
+                                    <li><img class="img14" src="/images/Frame (1).svg" alt=""><div class="circle"></div></li>
                             </div>
                             <div class="frame6">
                                 <p>Check Live Site</p>
@@ -173,11 +180,11 @@
                     <div class="tehc-cta">
                         <div class="tehc-cta-box">
                             <div class="technologies">
-                                    <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
+                                    <li><img class="react" src="/images/next.svg" alt=""><div class="circle"></div></li>
                                     <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
                                     <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
                                     <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="img14" src="/images/image 14.png" alt=""><div class="circle"></div></li>
+                                    <li><img class="img14" src="/images/image 14.svg" alt=""><div class="circle"></div></li>
                             </div>
                             <div class="frame6">
                                 <p>Check Live Site</p>
@@ -194,71 +201,68 @@
                 </div>
             </div>
         </div>
-        <div class="testimonials" id="testimonials">
-            <p class="title">Kind words from <span>satisfied clients</span></p>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="box">
-                            <div class="profile-button">
-                                <img src="images/Switch.svg" alt="">
-                                <div class="info-container">
-                                    <p>Michael Johnson</p>
-                                    <p>Director of AlphaStream Technologies</p>
-                                </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <p class="title">Kind words from <span>satisfied clients</span></p>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="profile-button">
+                            <img src="images/Switch.svg" alt="">
+                            <div class="info-container">
+                                <p>Michael Johnson</p>
+                                <p>Director of AlphaStream Technologies</p>
                             </div>
-                            <p class="text">Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.</p>
-                            <img class="bg-image" src="images/Image (2).png" alt="">
                         </div>
-                    </div>               
-                    <div class="swiper-slide">
-                        <div class="box">
-                            <div class="profile-button">
-                                <img src="images/Switch.svg" alt="">
-                                <div class="info-container">
-                                    <p>Michael Johnson</p>
-                                    <p>Director of AlphaStream Technologies</p>
-                                </div>
+                        <p class="text">Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.</p>
+                        <img class="bg-image" src="images/Image (2).png" alt="">
+                    </div>
+                </div>               
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="profile-button">
+                            <img src="images/Switch.svg" alt="">
+                            <div class="info-container">
+                                <p>Michael Johnson</p>
+                                <p>Director of AlphaStream Technologies</p>
                             </div>
-                            <p class="text">Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.</p>
-                            <img class="bg-image" src="images/Image (2).png" alt="">
                         </div>
-                    </div>               
-                    <div class="swiper-slide">
-                        <div class="box">
-                            <div class="profile-button">
-                                <img src="images/Switch.svg" alt="">
-                                <div class="info-container">
-                                    <p>Michael Johnson</p>
-                                    <p>Director of AlphaStream Technologies</p>
-                                </div>
+                        <p class="text">Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.</p>
+                        <img class="bg-image" src="images/Image (2).png" alt="">
+                    </div>
+                </div>               
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="profile-button">
+                            <img src="images/Switch.svg" alt="">
+                            <div class="info-container">
+                                <p>Michael Johnson</p>
+                                <p>Director of AlphaStream Technologies</p>
                             </div>
-                            <p class="text">Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.</p>
-                            <img class="bg-image" src="images/Image (2).png" alt="">
                         </div>
-                    </div>               
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+                        <p class="text">Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.</p>
+                        <img class="bg-image" src="images/Image (2).png" alt="">
+                    </div>
+                </div>               
             </div>
-            <div class="logos">
-                <img src="/images/logo1.svg" alt="">
-                <img src="/images/logo2.svg" alt="">
-                <img src="/images/logo3.svg" alt="">
-                <img src="/images/logo4.svg" alt="">
+    </section>
+    <section class="logos">
+        <div class="container">
+            <div class="row g-5">
+                <img src="images/logo1.svg" alt="" class="col">
+                <img src="images/logo2.svg" alt="" class="col">
+                <img src="images/logo3.svg" alt="" class="col">
+                <img src="images/logo4.svg" alt="" class="col">
+                <img src="images/logo5.svg" alt="" class="col">
             </div>
         </div>
-        <div class="experience">
+    </section>
+    <section class="experience">
+        <div class="container">
             <p class="title">My <span>Work Experience</span></p>
             <div class="experience-container">
-                <div class="card">
+                <div class="card-ex">
                     <div class="frame">
                         <img src="/images/_Group_.svg" alt="">
                         <div class="section">
@@ -267,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-ex">
                     <div class="frame">
                         <img src="/images/Frame 5.svg" alt="">
                         <div class="section">
@@ -276,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-ex">
                     <div class="frame">
                         <img src="/images/Rectangle.svg" alt="">
                         <div class="section">
@@ -285,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-ex">
                     <div class="frame">
                         <img src="/images/_Group_ (1).svg" alt="">
                         <div class="section">
@@ -296,20 +300,71 @@
                 </div>
             </div>
         </div>
-        <div class="approach">
+    </section>
+    <section class="approach">
+        <div class="container">
             <p class="text">My <span>approach</span></p>
-            <div class="phases">
-                <div class="phase">
+            <div class="phases row g-5">
+                <div class="phase col-lg-4">
                     <div class="phase-button">
                         <p>Phase 1</p>
+                    </div>
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                </div>
+                <div class="phase col-lg-4">
+                    <div class="phase-button">
+                        <p>Phase 2</p>
+                    </div>
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                </div>
+                <div class="phase col-lg-4">
+                    <div class="phase-button">
+                        <p>Phase 3</p>
+                    </div>
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                    <img src="/images/section input.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <div class="text">
+                <h3 class="fs-sm-1">Ready to take <span>your</span> digital <br> presence to the next level?</h3>
+                <p>Reach out to me today and let's discuss how I can help you achieve your goals.</p>
+                <div class="footer-button">
+                    <p class="fs-6">Contact Me Now</p>
+                    <img src="images/Arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="social-links row g-4">
+                <p class="col-lg-6">Copyright ©2024 Adrian Hajdin</p>
+                <div class="pagination-links col-lg-6">
+                    <div class="links">
+                        <li><a href=""><img src="/images/social5.svg" alt=""></a></li>
+                        <li><a href=""><img src="/images/social4.svg" alt=""></a></li>
+                        <li><a href=""><img src="/images/social3.svg" alt=""></a></li>
+                        <li><a href=""><img src="/images/social1.svg" alt=""></a></li>
+                        <li><a href=""><img src="/images/social2.svg" alt=""></a></li>
                     </div>
                 </div>
             </div>
         </div>
+    </footer>
     </div>
     <!-- swiper-Js library -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- bootstrap library -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- main js file -->
+    <script src="./JS/main.js"></script>
 </body>
 </html> 
