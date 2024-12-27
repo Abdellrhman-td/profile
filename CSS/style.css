@@ -1234,11 +1234,11 @@ padding: 1.75px 0px 0px 0px;
 }
 .approach .phase img:nth-child(4) {
     top: -3%;
-    left: -4%;
+    left: -3%;
 }
 .approach .phase img:nth-child(5) {
     top: -3%;
-    right: -4%;
+    right: -3%;
 }
 .approach .phase img:nth-child(6) {
     top: 94%;
@@ -1246,7 +1246,7 @@ padding: 1.75px 0px 0px 0px;
 }
 .approach .phase img:nth-child(7) {
     top: 94%;
-    right: -5%;
+    right: -3%;
 }
 /* footer */
 footer {
@@ -1527,6 +1527,9 @@ footer .social-links .pagination-links li:not(:last-child){
 }
 /* footer */
 @media (max-width: 991px) {
+    footer .social-links {
+        margin-top: 720px;
+    }
     footer .social-links > p {
         text-align: center;
     }
