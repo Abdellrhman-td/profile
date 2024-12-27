@@ -22,7 +22,7 @@ header {
     text-align: center;
     padding-top: 50px;
     background-color: #000319;
-    background-image: url(/images/grid-pattern2.svg);
+    background-image: url(../images/grid-pattern2.svg);
 }
 header .container .spot-light-left {
     position: absolute;
@@ -183,11 +183,11 @@ header .button a {
 /* start portfolio */
 .portfolio {
     background-color: #000319;
-    background-image: url(/images/grid-pattern2.svg);
+    background-image: url(../images/grid-pattern2.svg);
 }
 .portfolio .box {
     overflow: hidden;
-    background-image: url(/images/image.png);
+    background-image: url(../images/image.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,7 +271,7 @@ header .button a {
 }
 .portfolio .frame .box-map {
     overflow: hidden;
-    background-image: url(/images/section\ input\ container\ \(1\).png);
+    background-image: url(../images/section\ input\ container\ \(1\).png);
     background-repeat: no-repeat;
     height: 255.5px;
     border-radius:23px;
@@ -434,7 +434,7 @@ header .button a {
 }
 .portfolio .h-box2 .v-box .box1 {
     overflow: hidden;
-    background-image: url(/images/Background.png);
+    background-image: url(../images/Background.png);
     position: relative;
     height: 180px;
     gap: 16px;
@@ -483,7 +483,7 @@ header .button a {
 }
 .portfolio .h-box2 .v-box .box2 {
     background-repeat:no-repeat ;
-    background-image: url(/images/backgroundblobservicepng.png);
+    background-image: url(../images/backgroundblobservicepng.png);
     height: 180px;
     padding: 0px 19px 0px 19px;
     gap: 10px;
@@ -562,7 +562,7 @@ padding: 1.75px 0px 0px 0px;
     color: #E4ECFF;
 }
 .portfolio .box-animation {
-    background-image: url(/images/Background\ \(1\).png);
+    background-image: url(../images/Background\ \(1\).png);
     opacity: 0.4px;
     height: 384px;
     gap: 16px;
@@ -811,7 +811,7 @@ padding: 1.75px 0px 0px 0px;
 .projects .card {
     position: absolute;
     background-size: cover;
-    background-image: url(/images/background-planet\ \(2\).png);
+    background-image: url(../images/background-planet\ \(2\).png);
     height: 330px;
     top: 36px;
     left: 0;
@@ -1126,6 +1126,69 @@ padding: 1.75px 0px 0px 0px;
     align-items: center;
     border: 1px solid;
     background: linear-gradient(103.4deg, #04071D 16.66%, #0C0E23 81.61%);
+    transition: all 1s linear;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+.approach .over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    background: linear-gradient(to top, rgb(0 0 0 / 50%), rgba(0, 0, 0, 0) 40%);
+    visibility: hidden;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+.approach .phase::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255 255 255 / 6%);
+    border-radius: 23px;
+}
+.approach .phase:hover::before {
+    width: 100%;
+    height: 100%;
+}
+.approach .phase:hover .over-lay{
+    visibility: visible;
+}
+.approach .phase:hover .phase-content{
+    opacity: 1;
+}
+.approach .phase:hover .phase-button {
+    display: none;
+}
+.approach .phase .phase-content {
+    opacity: 0;
+    width: 350px;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+.approach .phase .phase-content h3{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 15px;
+}
+.approach .phase .phase-content p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 25px;
 }
 .approach .phase .phase-button {
     position: absolute;
@@ -1135,12 +1198,17 @@ padding: 1.75px 0px 0px 0px;
     gap: 10px;
     border-radius: 11px;
     border: 1px;
+    transition: all .2s linear;
     -webkit-border-radius: 11px;
     -moz-border-radius: 11px;
     -ms-border-radius: 11px;
     -o-border-radius: 11px;
     border: 1px solid;
     background: linear-gradient(90deg, rgba(22, 26, 49, 0.3) 3.4%, rgba(6, 9, 31, 0.3) 100%);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
 }
 .approach .phase .phase-button p {
     width: 109px;
@@ -1160,26 +1228,27 @@ padding: 1.75px 0px 0px 0px;
     height: 46px;
     padding: 6.11px 0px 0px 0px;
     opacity: 0.2px;
+    z-index: 3;
 }
-.approach .phase img:nth-child(2) {
+.approach .phase img:nth-child(4) {
     top: -3%;
     left: -4%;
 }
-.approach .phase img:nth-child(3) {
+.approach .phase img:nth-child(5) {
     top: -3%;
     right: -4%;
 }
-.approach .phase img:nth-child(4) {
+.approach .phase img:nth-child(6) {
     top: 94%;
     left: -5%;
 }
-.approach .phase img:nth-child(5) {
+.approach .phase img:nth-child(7) {
     top: 94%;
     right: -5%;
 }
 /* footer */
 footer {
-    background-image: url(/images/pattern\ \(1\).png);
+    background-image: url(../images/pattern\ \(1\).png);
     background-repeat: no-repeat;
     position: relative;
     height: 848.65px;
@@ -1259,6 +1328,7 @@ footer .footer-button{
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
+    cursor: pointer;
 }
 footer .footer-button p:first-child {
     height: 22px;
