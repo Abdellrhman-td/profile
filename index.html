@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!-- main css file -->
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <!-- google fonts cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap library -->
@@ -38,65 +38,85 @@
     </header>
     <section class="portfolio" id="">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-4">
                 <div class="h-box">
-                    <div class="row g-5">
-                        <div class="box col-lg-7">
-                            <div class="button-box">
-                                <img src="/images/Button (2).png" alt="">
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="box">
+                                <div class="button-box">
+                                    <img src="/images/Button (2).png" alt="">
+                                </div>
+                                <div class="group">
+                                    <img src="/images/Group.png" alt="">
+                                </div>
+                                <p class="text">I prioritize client collaboration, fostering open communication </p>
+                                <img class="fade-img" src="images/fade.png" alt="">
                             </div>
-                            <div class="group">
-                                <img src="/images/Group.png" alt="">
-                            </div>
-                            <p class="text">I prioritize client collaboration, fostering open communication </p>
-                            <img class="fade-img" src="images/fade.png" alt="">
                         </div>
-                        <div class="frame col-lg-5">
-                            <div class="box-map">
-                                <p class="zone">I’m very flexible with time zone communications</p>
-                                <div class="pagination-buttons">
-                                    <div class="button-map-Ukrain"><p class="country">Ukrain</p></div>
-                                    <div class="button-map-Germany"><p class="country">Germany</p></div>
-                                    <div class="button-map-USA"><p class="country">USA</p></div>
+                        <div class="col-lg-5">
+                            <div class="frame row g-4">
+                                <div class="col-12">
+                                    <div class="box-map">
+                                        <p class="zone">I’m very flexible with time zone communications</p>
+                                        <div class="pagination-buttons">
+                                            <div class="button-map-Ukrain"><p class="country">Ukrain</p></div>
+                                            <div class="button-map-Germany"><p class="country">Germany</p></div>
+                                            <div class="button-map-USA"><p class="country">USA</p></div>
+                                        </div>
+                                        <img src="/images/map.png" alt="">
+                                    </div>
                                 </div>
-                                <img src="/images/map.png" alt="">
-                            </div>
-                            <div class="box-lang">
-                                <div class="image-box">
-                                    <img src="/images/Frame (1).png" alt="">
-                                    <img src="/images/Frame.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <p class="improve">I constantly try to improve</p>
-                                    <p class="stack">My tech stack</p>
+                                <div class="col-12">
+                                    <div class="box-lang">
+                                        <div class="image-box">
+                                            <img src="/images/Frame (1).png" alt="">
+                                            <img src="/images/Frame.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <p class="improve">I constantly try to improve</p>
+                                            <p class="stack">My tech stack</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="h-box2">
-                    <div class="row g-5">
-                        <div class="v-box col-lg-4">
-                            <div class="box1">
-                                <p>Tech enthusiast with a passion for development.</p>
-                                <img src="/images/section-input.svg" alt="">
-                            </div>
-                            <div class="box2">
-                                <div class="button-container">
-                                    <p>Do you want to start a project together?</p>
-                                    <div class="button">
-                                        <img src="/images/Card.svg" alt="">
-                                        <p>Copy my email address</p>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="v-box row g-4">
+                                <div class="col-lg-12">
+                                    <div class="box1">
+                                        <p>Tech enthusiast with a passion for development.</p>
+                                        <img src="/images/section-input.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="box2">
+                                        <div class="button-container">
+                                            <p>Do you want to start a project together?</p>
+                                            <div class="button">
+                                                <img src="/images/Card.svg" alt="">
+                                                <p>Copy my email address</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="box-animation col-lg-8">
-                            <div class="frame">
-                                <p class="paragraph1">The Inside Scoop</p>
-                                <p class="paragraph2">Currently building a JS Animation library</p>
+                        <div class="col-lg-8">
+                            <div class="box-animation">
+                                <div class="frame row">
+                                    <div class="col-lg-6">
+                                    </div>
+                                    <div class="col-lg-6">
+                                    </div>
+                                    <p class="paragraph1">The Inside Scoop</p>
+                                    <p class="paragraph2">Currently building a JS Animation library</p>
+                                </div>
+                                <img src="/images/Image (1).png" alt="">
                             </div>
-                            <img src="/images/Image (1).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -106,96 +126,104 @@
     <section class="projects" id="projects">
         <div class="container">
             <p class="title">A small selection of <span>recent projects</span></p>
-            <div class="cards-container">
-                <div class="project-card">
-                    <div class="tehc-cta">
-                        <div class="tehc-cta-box">
-                            <div class="technologies">
-                                    <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="img14" src="/images/image 14.png" alt=""><div class="circle"></div></li>
+            <div class="cards-container row g-5">
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="tehc-cta">
+                            <div class="tehc-cta-box pt-md-4 pt-lg-5 pt-xl-5 pt-xxl-3">
+                                <div class="technologies">
+                                        <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="img14" src="/images/image 14.png" alt=""><div class="circle"></div></li>
+                                </div>
+                                <div class="frame6">
+                                    <p>Check Live Site</p>
+                                    <img src="/images/check-Arrow.svg" alt="">
+                                </div>
                             </div>
-                            <div class="frame6">
-                                <p>Check Live Site</p>
-                                <img src="/images/check-Arrow.svg" alt="">
+                            <p class="solar-system">3D Solar System Planets to Explore</p>
+                            <p class="explore explore pt-sm-4 pt-xxl-3">Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.</p>
+                            <div class="card">
+                                <img class="earth" src="/images/earth-Image (1).png" alt="">
+                                <img class="bg" src="/images/background-planet (2).png" alt="">
                             </div>
-                        </div>
-                        <p class="solar-system">3D Solar System Planets to Explore</p>
-                        <p class="explore">Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.</p>
-                        <div class="card">
-                            <img class="earth" src="/images/earth-Image (1).png" alt="">
-                            <img class="bg" src="/images/background-planet (2).png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="tehc-cta">
-                        <div class="tehc-cta-box">
-                            <div class="technologies">
-                                    <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="threejs" src="/images/Frame.svg" alt=""><div class="circle"></div></li>
-                                    <li><img class="img14" src="/images/Frame (1).svg" alt=""><div class="circle"></div></li>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="tehc-cta">
+                            <div class="tehc-cta-box pt-md-4 pt-lg-5 pt-xl-5 pt-xxl-3">
+                                <div class="technologies">
+                                        <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="threejs" src="/images/Frame.svg" alt=""><div class="circle"></div></li>
+                                        <li><img class="img14" src="/images/Frame (1).svg" alt=""><div class="circle"></div></li>
+                                </div>
+                                <div class="frame6">
+                                    <p>Check Live Site</p>
+                                    <img src="/images/check-Arrow.svg" alt="">
+                                </div>
                             </div>
-                            <div class="frame6">
-                                <p>Check Live Site</p>
-                                <img src="/images/check-Arrow.svg" alt="">
+                            <p class="solar-system">Yoom - Video Conferencing App</p>
+                            <p class="explore pt-sm-4 pt-xxl-3">Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.</p>
+                            <div class="card">
+                                <img class="earth" src="/images/box2-Image (1).png" alt="">
+                                <img class="bg" src="/images/background-planet (2).png" alt="">
                             </div>
-                        </div>
-                        <p class="solar-system">Yoom - Video Conferencing App</p>
-                        <p class="explore">Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.</p>
-                        <div class="card">
-                            <img class="earth" src="/images/box2-Image (1).png" alt="">
-                            <img class="bg" src="/images/background-planet (2).png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="tehc-cta">
-                        <div class="tehc-cta-box">
-                            <div class="technologies">
-                                    <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="img14" src="/images/Frame (1).svg" alt=""><div class="circle"></div></li>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="tehc-cta">
+                            <div class="tehc-cta-box pt-md-4 pt-lg-5 pt-xl-5 pt-xxl-3">
+                                <div class="technologies">
+                                        <li><img class="react" src="/images/React.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="img14" src="/images/Frame (1).svg" alt=""><div class="circle"></div></li>
+                                </div>
+                                <div class="frame6">
+                                    <p>Check Live Site</p>
+                                    <img src="/images/check-Arrow.svg" alt="">
+                                </div>
                             </div>
-                            <div class="frame6">
-                                <p>Check Live Site</p>
-                                <img src="/images/check-Arrow.svg" alt="">
+                            <p class="solar-system">AI Image SaaS - Canva Application</p>
+                            <p class="explore pt-sm-4 pt-xxl-3">A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.</p>
+                            <div class="card">
+                                <img class="earth" src="/images/box3-Image (2).png" alt="">
+                                <img class="bg" src="/images/background-planet (2).png" alt="">
                             </div>
-                        </div>
-                        <p class="solar-system">AI Image SaaS - Canva Application</p>
-                        <p class="explore">A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.</p>
-                        <div class="card">
-                            <img class="earth" src="/images/box3-Image (2).png" alt="">
-                            <img class="bg" src="/images/background-planet (2).png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="tehc-cta">
-                        <div class="tehc-cta-box">
-                            <div class="technologies">
-                                    <li><img class="react" src="/images/next.svg" alt=""><div class="circle"></div></li>
-                                    <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
-                                    <li><img class="img14" src="/images/image 14.svg" alt=""><div class="circle"></div></li>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <div class="tehc-cta">
+                            <div class="tehc-cta-box pt-md-4 pt-lg-5 pt-xl-5 pt-xxl-3">
+                                <div class="technologies">
+                                        <li><img class="react" src="/images/next.svg" alt=""><div class="circle"></div></li>
+                                        <li><img class="talwind" src="/images/Vector4.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="ts" src="/images/ts.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="threejs" src="/images/Threejs-logo 2.png" alt=""><div class="circle"></div></li>
+                                        <li><img class="img14" src="/images/image 14.svg" alt=""><div class="circle"></div></li>
+                                </div>
+                                <div class="frame6">
+                                    <p>Check Live Site</p>
+                                    <img src="/images/check-Arrow.svg" alt="">
+                                </div>
                             </div>
-                            <div class="frame6">
-                                <p>Check Live Site</p>
-                                <img src="/images/check-Arrow.svg" alt="">
+                            <p class="solar-system">Animated Apple Iphone 3D Website</p>
+                            <p class="explore pt-sm-4 pt-xxl-3">Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.</p>
+                            <div class="card">
+                                <img class="earth" src="/images/box4-Image (3).png" alt="">
+                                <img class="bg" src="/images/background-planet (2).png" alt="">
                             </div>
-                        </div>
-                        <p class="solar-system">Animated Apple Iphone 3D Website</p>
-                        <p class="explore">Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.</p>
-                        <div class="card">
-                            <img class="earth" src="/images/box4-Image (3).png" alt="">
-                            <img class="bg" src="/images/background-planet (2).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -261,40 +289,48 @@
     <section class="experience">
         <div class="container">
             <p class="title">My <span>Work Experience</span></p>
-            <div class="experience-container">
-                <div class="card-ex">
-                    <div class="frame">
-                        <img src="/images/_Group_.svg" alt="">
-                        <div class="section">
-                            <p>Frontend Engineer Intern</p>
-                            <p>Assisted in the development of a web-based platform using React.js, enhancing interactivity.</p>
+            <div class="experience-container row g-4">
+                <div class="col-lg-6">
+                    <div class="card-ex">
+                        <div class="frame">
+                            <img src="/images/_Group_.svg" alt="">
+                            <div class="section">
+                                <p>Frontend Engineer Intern</p>
+                                <p>Assisted in the development of a web-based platform using React.js, enhancing interactivity.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-ex">
-                    <div class="frame">
-                        <img src="/images/Frame 5.svg" alt="">
-                        <div class="section">
-                            <p>Mobile App Dev - JSM Tech</p>
-                            <p>Designed and developed mobile app for both iOS & Android platforms using React Native.</p>
+                <div class="col-lg-6">
+                    <div class="card-ex">
+                        <div class="frame">
+                            <img src="/images/Frame 5.svg" alt="">
+                            <div class="section">
+                                <p>Mobile App Dev - JSM Tech</p>
+                                <p>Designed and developed mobile app for both iOS & Android platforms using React Native.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-ex">
-                    <div class="frame">
-                        <img src="/images/Rectangle.svg" alt="">
-                        <div class="section">
-                            <p>Freelance App Dev Project</p>
-                            <p>Led the dev of a mobile app for a client, from initial concept to deployment on app stores.</p>
+                <div class="col-lg-6">
+                    <div class="card-ex">
+                        <div class="frame">
+                            <img src="/images/Rectangle.svg" alt="">
+                            <div class="section">
+                                <p>Freelance App Dev Project</p>
+                                <p>Led the dev of a mobile app for a client, from initial concept to deployment on app stores.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-ex">
-                    <div class="frame">
-                        <img src="/images/_Group_ (1).svg" alt="">
-                        <div class="section">
-                            <p>Lead Frontend Developer</p>
-                            <p>Developed and maintained user-facing features using modern frontend technologies.</p>
+                <div class="col-lg-6">
+                    <div class="card-ex">
+                        <div class="frame">
+                            <img src="/images/_Group_ (1).svg" alt="">
+                            <div class="section">
+                                <p>Lead Frontend Developer</p>
+                                <p>Developed and maintained user-facing features using modern frontend technologies.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -191,7 +191,7 @@ header .button a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 541px;
+    height: 535px;
     gap: 16px;
     border-radius: 23px;
     position: relative;
@@ -200,8 +200,6 @@ header .button a {
     -ms-border-radius: 23px;
     -o-border-radius: 23px;
     border: 1px solid;
-    width: 54.5%;
-    margin: auto;
 }
 .portfolio .button-box {
     height: 59.29px;
@@ -265,11 +263,11 @@ header .button a {
     bottom: -1px;
 }
 .portfolio .frame {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 30px; */
 }
 .portfolio .frame .box-map {
     overflow: hidden;
@@ -428,11 +426,11 @@ header .button a {
     color: #FFFFFF;
 }
 .portfolio .h-box2 .v-box {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 30px; */
 }
 .portfolio .h-box2 .v-box .box1 {
     overflow: hidden;
@@ -509,7 +507,7 @@ header .button a {
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
 }
-.portfolio .h-box2 .v-box .box2:hover .button-container{
+.portfolio .h-box2 .v-box .box2:hover .button-container > p{
     transform: translateX(10px);
     -webkit-transform: translateX(10px);
     -moz-transform: translateX(10px);
@@ -527,6 +525,7 @@ header .button a {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #FFFFFF;
+    transition: var(--main-transition);
 }
 .portfolio .button-container .button {
     width: 197px;
@@ -543,6 +542,7 @@ header .button a {
     background: linear-gradient(90deg, #161A31 3.4%, #06091F 100%);
     border: 1px solid;
     margin: 12px auto 0;
+    cursor: pointer;
 }
 .portfolio .button-container img {
     width: 14px;
@@ -564,7 +564,7 @@ padding: 1.75px 0px 0px 0px;
 .portfolio .box-animation {
     background-image: url(/images/Background\ \(1\).png);
     opacity: 0.4px;
-    height: 390px;
+    height: 384px;
     gap: 16px;
     border-radius: 23px;
     border: 1px;
@@ -578,8 +578,6 @@ padding: 1.75px 0px 0px 0px;
     position: relative;
     align-items: center;
     overflow: hidden;
-    width: 63%;
-    margin: 30px auto;
 }
 .portfolio .box-animation .frame {
     position: absolute;
@@ -649,24 +647,25 @@ padding: 1.75px 0px 0px 0px;
     background-color: #000319;
 }
 .projects .cards-container{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    flex-wrap:wrap;
+    flex-wrap:wrap; */
     padding-top: 110px;
 }
 .projects .project-card {
     position: relative;
-    width: 630px;
-    height: 622px;
-    gap: 16px;
+    /*width: 630px;
+    */height: 659px;
+    border-radius: 14px;
+    /*gap: 16px;
     border-radius: 23px;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    -ms-border-radius: 23px;
-    -o-border-radius: 23px;
-    background: linear-gradient(103.4deg, #04071D 16.66%, #0C0E23 81.61%);
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    */background: linear-gradient(103.4deg, #04071D 16.66%, #0C0E23 81.61%);
     border: 1px solid;
 }
 .projects .title {
@@ -696,7 +695,7 @@ padding: 1.75px 0px 0px 0px;
 }
 .projects .tehc-cta-box { 
     position: absolute;
-    width: 552px;
+    width: 92%;
     height: 50px;
     top: 532px;
     left: 24px;
@@ -704,8 +703,6 @@ padding: 1.75px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
 }
 .projects .tehc-cta .technologies {
     display: flex;
@@ -760,7 +757,7 @@ padding: 1.75px 0px 0px 0px;
 }
 .projects .tehc-cta .solar-system {
     position: absolute;
-    width: 527px;
+    width: 90%;
     height: 36px;
     top: 402px;
     left: 24px;
@@ -777,16 +774,14 @@ padding: 1.75px 0px 0px 0px;
 }
 .projects .tehc-cta .explore {
     position: absolute;
-    width: 531px;
     height: 52px;
     top: 456px;
     left: 24px;
     text-align: left;
-    
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
-    
+    width: 90%;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #BEC1DD;
@@ -813,7 +808,7 @@ padding: 1.75px 0px 0px 0px;
     height: 319.73px;
     top: 30.14px;    
     border-radius: 10px 0px 0px 0px;
-    left: 50%;
+    left: 0;
     transform: translateX(-50%);
     transform: rotate(2.63deg);
     -webkit-transform: rotate(2.63deg);
@@ -822,7 +817,9 @@ padding: 1.75px 0px 0px 0px;
     -o-transform: rotate(2.63deg);
     position: absolute;
     z-index: 1;
-    left: 49px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
 }
 .projects .card .bg {
     position: absolute;
@@ -993,16 +990,16 @@ padding: 1.75px 0px 0px 0px;
     color: #CBACF9;
 }
 .experience .experience-container {
-    display: flex;
+    /* display: flex;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     padding-top: 70px;
     padding-bottom: 130px;
 } 
 .experience .card-ex {
     position: relative;
-    width: 633px;
+    /* width: 633px; */
     height: 190px;
     border-radius: 23px;
     border: 1px;
@@ -1016,22 +1013,20 @@ padding: 1.75px 0px 0px 0px;
 .experience .frame {
     display: flex;
     align-items: center;
-    width: 495.4px;
     height: 87px;
-    top: 52px;
+    top: 0;
     left: 52px;
     gap: 30px;
-    
+    flex-wrap: wrap;
     position: absolute;
 }
 .experience .frame img {
-    width: 94.4px;
+    max-width: 100%;
     height: 87px;
     
     
 }
 .experience .section {
-    width: 371px;
     height: 87px;
     gap: 12px;
     
@@ -1048,11 +1043,7 @@ padding: 1.75px 0px 0px 0px;
     padding-bottom: 12px;
 }
 .experience .section p:last-child {
-    width: 371px;
     height: 42px;
-    
-    
-    
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
@@ -1347,10 +1338,6 @@ footer .social-links .pagination-links li:not(:last-child){
 }
 /* portfolio */
 @media (max-width: 576px) {
-    .portfolio .box {
-        margin: auto;
-        width: 89%;
-    }
     .portfolio .box p {
         font-size: 20px;
         line-height: 24px;
@@ -1375,63 +1362,70 @@ footer .social-links .pagination-links li:not(:last-child){
         line-height: 24px;
     }
 }
-@media (max-width: 992px) {
-    .portfolio .box,
-    .portfolio .box-animation {
-        width: 89%;
-    }
-}
 /* projects */
 @media (max-width: 1399px) {
-    .projects .project-card {
-        height: 674px;
-    }
     .projects .cards-container {
         justify-content: center;
     }
 }
-/* projects */
 @media (max-width: 576px) {
-    .projects .frame6 {
-        margin-top: 14px;
+    .projects .project-card {
+        height: 635px;
     }
     .projects .tehc-cta-box {
-        justify-content: center;
+        justify-content: space-between;
         margin-top: 30px;
         width: 346px;
     }
     .projects .tehc-cta .explore {
         left: 50%;
         transform: translateX(-50%);  
-        width: 359px;
-        text-align: center;
+        padding-top: 10px;
     }
     .projects .tehc-cta .solar-system {
         top: 376px;
-        width: 338px;
-        text-align: center;
     }
-    .projects .card .earth {
-        left: 0;
-        width: 100%;
+    .projects .tehc-cta .technologies {
+        width: 159px;
+    }
+    .projects .tehc-cta li {
+        width: 34px;
+        height: 34px;
+    }
+    .projects .technologies img {
+        width: 65%;
+        height: 55%;
+    }
+    .projects .frame6 {
+        width: 130px;
+        gap: 0;
+    }
+    .projects .frame6 p {
+        font-size: 15px;
+    }
+    .projects .frame6 img {
+        width: 11px;
+    }
+}
+@media (min-width: 1440px) {
+    .projects .project-card {
+        height: 630px;
     }
 }
 /* experience */
 @media (max-width: 576px) {
-    .experience .section p:last-child {
-        width: 222px;
-    }
     .experience .section p:first-child {
         font-size: 23px;
-        width: 200px;   
-    }
-    .experience .card-ex {
-        height: 260px;
     }
 }
 @media (max-width: 1399px) {
     .experience .experience-container {
         justify-content: center;
+    }
+}
+@media (max-width: 1200px) {
+    .experience .card-ex {
+        height: 220px;
     }
 }
 /* approach */
@@ -1464,6 +1458,9 @@ footer .social-links .pagination-links li:not(:last-child){
     }
     footer .social-links .pagination-links li:not(:last-child) {
         margin-right: 20px;
+    }
+    footer .social-links {
+        margin-top: 720pxؤ;
     }
 }
 
