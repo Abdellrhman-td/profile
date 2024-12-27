@@ -28,11 +28,13 @@ header .container .spot-light-left {
     position: absolute;
     left: 0;
     top: 0;
+    width: 50%;
 }
 header .container .spot-light-right {
     position: absolute;
     right: 0;
     top: 0;
+    width: 50%;
 }
 header nav {
     width: 451px;
@@ -158,7 +160,7 @@ header .button{
     font-weight: 500;
     line-height: 21.6px;
     letter-spacing: -0.47999998927116394px;
-    
+    cursor: pointer;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #FFFFFF;
